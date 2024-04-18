@@ -13,6 +13,7 @@ tTKCinemaProductReader1.AddFieldDataRecursively = 1
 tTKMergeandContourTreeFTM1 = TTKMergeTree(Input=tTKCinemaProductReader1)
 tTKMergeandContourTreeFTM1.ScalarField = ["POINTS", "VectorMag"]
 tTKMergeandContourTreeFTM1.TreeType = "Split Tree"
+tTKMergeandContourTreeFTM1.UseAllCores = 0
 
 # create a new 'TTK BlockAggregator'
 tTKBlockAggregator1 = TTKBlockAggregator(
