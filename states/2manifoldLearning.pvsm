@@ -43003,7 +43003,7 @@
         <Domain name="range" id="16771.NullValue.range"/>
       </Property>
       <Property name="Radius" id="16771.Radius" number_of_elements="1">
-        <Element index="0" value="0.09"/>
+        <Element index="0" value="0.075"/>
         <Domain name="range" id="16771.Radius.range"/>
       </Property>
       <Property name="SampleDimensions" id="16771.SampleDimensions" number_of_elements="3">
