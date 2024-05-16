@@ -46,9 +46,9 @@ tTKMergeTreeAutoencoder1.PersistenceThreshold = 2.0
 
 # create a new 'TTK MergeTreeAutoencoderDecoding'
 tTKMergeTreeAutoencoderDecoding1 = TTKMergeTreeAutoencoderDecoding(
-    Origins=OutputPort(tTKMergeTreeAutoencoder1, 1),
-    BasesVectors=OutputPort(tTKMergeTreeAutoencoder1, 2),
-    Coefficients=OutputPort(tTKMergeTreeAutoencoder1, 3),
+    Origins=OutputPort(tTKMergeTreeAutoencoder1, 0),
+    BasesVectors=OutputPort(tTKMergeTreeAutoencoder1, 1),
+    Coefficients=OutputPort(tTKMergeTreeAutoencoder1, 2),
 )
 
 # save the output
