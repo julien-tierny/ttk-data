@@ -67,8 +67,11 @@ If you have any questions regarding these examples, please let us know by sendin
 | [Persistence diagram distance](persistenceDiagramDistance/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistenceDiagramDistance.jpg) |
 | [Persistence diagram clustering](persistenceDiagramClustering/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistenceDiagramClustering.jpg) |
 | [Clustering Kelvin Helmoltz Instabilities](clusteringKelvinHelmholtzInstabilities/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/clusteringKelvinHelmholtzInstabilities.jpg) |
+| [Persistence diagram Wasserstein Auto-Encoding](persistenceDiagramWAE/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistenceDiagramWAE.jpg) |
+| [Merge feature tracking](mergeTreeFeatureTracking/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/mergeTreeFeatureTracking.jpg) |
 | [Merge tree clustering](mergeTreeClustering/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/mergeTreeClustering.jpg) |
 | [Merge tree principal geodesic analysis](mergeTreePGA/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/mergeTreePGA.jpg) |
+| [Merge tree Wasserstein Auto-Encoding](mergeTreeWAE/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/mergeTreeWAE.jpg) |
 | [Contour tree alignment](contourTreeAlignment/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/contourTreeAlignment.jpg) |
 | [Persistent Generators Periodic Picture](persistentGenerators_periodicPicture/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistentGenerators_periodicPicture.jpg) |
 
