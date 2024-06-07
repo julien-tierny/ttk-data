@@ -59,8 +59,8 @@ pvpython python/persistenceDiagramWAE.py
 
 [IcospheresFromPoints](https://topology-tool-kit.github.io/doc/html/classttkIcospheresFromPoints.html)
 
-[PersistenceDiagram](https://topology-tool-kit.github.io/doc/html/classttkPersistenceDiagram.html)
-
 [MergeTreeAutoencoder](https://topology-tool-kit.github.io/doc/html/classttkMergeTreeAutoencoder.html)
 
 [MergeTreeAutoencoderDecoding](https://topology-tool-kit.github.io/doc/html/classttkMergeTreeAutoencoderDecoding.html)
+
+[PersistenceDiagram](https://topology-tool-kit.github.io/doc/html/classttkPersistenceDiagram.html)

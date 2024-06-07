@@ -63,14 +63,15 @@ pvpython python/mergeTreeWAE.py
 
 [FlattenMultiBlock](https://topology-tool-kit.github.io/doc/html/classttkFlattenMultiBlock.html)
 
+[GeometrySmoother](https://topology-tool-kit.github.io/doc/html/classttkGeometrySmoother.html)
+
 [IcospheresFromPoints](https://topology-tool-kit.github.io/doc/html/classttkIcospheresFromPoints.html)
 
 [MergeTree](https://topology-tool-kit.github.io/doc/html/classttkMergeTree.html)
 
-[GeometrySmoother](https://topology-tool-kit.github.io/doc/html/classttkGeometrySmoother.html)
-
-[MergeTreeClustering](https://topology-tool-kit.github.io/doc/html/classttkMergeTreeClustering.html)
-
 [MergeTreeAutoencoder](https://topology-tool-kit.github.io/doc/html/classttkMergeTreeAutoencoder.html)
 
 [MergeTreeAutoencoderDecoding](https://topology-tool-kit.github.io/doc/html/classttkMergeTreeAutoencoderDecoding.html)
+
+[MergeTreeClustering](https://topology-tool-kit.github.io/doc/html/classttkMergeTreeClustering.html)
+
