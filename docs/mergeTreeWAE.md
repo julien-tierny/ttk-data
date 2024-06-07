@@ -15,10 +15,15 @@ In terms of visualisation, a scalar field of each cluster is displayed with a zo
 
 The 2D planar layout is displayed with the persistence correlation view at the top right. The 12 scalar fields are colored by Cluster ID. Finally, a path drawn with PolyLineSource on the layout is drawn at the bottom right to show how we can interactivily explore the MT-WAE latent space with user-defined locations.
 
-The python script computes the MT-WAE basis. It saves the resulting coefficients of the input merge trees and the axes of the bases and their origins. Finally it saves the reconstructed merge trees given the bases and the coordinates of the merge trees in the basis.
+The python script computes the MT-WAE basis. This computation is not deterministic and it may take several minutes (depending on your hardware). It saves the resulting coefficients of the input merge trees and the axes of the bases and their origins. Finally it saves the reconstructed merge trees given the bases and the coordinates of the merge trees in the basis.
 
 ## ParaView
 To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
+``` bash
+paraview states/mergeTreeWAEDecoding.pvsm
+```
+
+To reproduce the above analysis pipeline *as well as* the (non-deterministic) training procedure, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command (the computation will take several minutes, depending on your hardware):
 ``` bash
 paraview states/mergeTreeWAE.pvsm
 ```
@@ -57,6 +62,8 @@ pvpython python/mergeTreeWAE.py
 [DataSetToTable](https://topology-tool-kit.github.io/doc/html/classttkDataSetToTable.html)
 
 [FlattenMultiBlock](https://topology-tool-kit.github.io/doc/html/classttkFlattenMultiBlock.html)
+
+[IcospheresFromPoints](https://topology-tool-kit.github.io/doc/html/classttkIcospheresFromPoints.html)
 
 [MergeTree](https://topology-tool-kit.github.io/doc/html/classttkMergeTree.html)
 
