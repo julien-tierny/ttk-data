@@ -12,7 +12,6 @@ tTKCinemaProductReader7.AddFieldDataRecursively = 1
 # create a new 'TTK PersistenceDiagram'
 tTKPersistenceDiagram1 = TTKPersistenceDiagram(Input=tTKCinemaProductReader7)
 tTKPersistenceDiagram1.ScalarField = ["POINTS", "velocityMag"]
-tTKPersistenceDiagram1.InputOffsetField = ["POINTS", "velocityMag"]
 tTKPersistenceDiagram1.Backend = "FTM (IEEE TPSD 2019)"
 
 # create a new 'TTK MergeTreeAutoencoder'
