@@ -11,7 +11,7 @@ All these trees are passed to [MergeTreeAutoencoder](https://topology-tool-kit.g
 
 Then the filter [MergeTreeAutoencoderDecoding](https://topology-tool-kit.github.io/doc/html/classttkMergeTreeAutoencoderDecoding.html) is used to reconstruct the input merge trees. 
 
-In terms of visualisation, a scalar field of each cluster is displayed with a zoom on their right of the important persistence pairs. The original merge trees are displayed alongside their reconstruction at their right. The persistence pairs of the trees are colored by ID to see what features they correspond to in the scalar field.
+In terms of visualization, a scalar field of each cluster is displayed with a zoom on their right of the important persistence pairs. The original merge trees are displayed alongside their reconstruction at their right. The persistence pairs of the trees are colored by ID to see what features they correspond to in the scalar field.
 
 The 2D planar layout is displayed with the persistence correlation view at the top right. The 12 scalar fields are colored by Cluster ID. Finally, a path drawn with PolyLineSource on the layout is drawn at the bottom right to show how we can interactivily explore the MT-WAE latent space with user-defined locations.
 
