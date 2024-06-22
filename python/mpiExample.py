@@ -118,7 +118,6 @@ resampleWithDataset1.PassPointArrays = 1
 # create a new 'TTK ScalarFieldCriticalPoints'
 tTKScalarFieldCriticalPoints1 = TTKScalarFieldCriticalPoints(Input=resampleWithDataset1)
 tTKScalarFieldCriticalPoints1.ScalarField = ['POINTS', 'gradientMagnitude']
-tTKScalarFieldCriticalPoints1.InputOffsetField = ['POINTS', 'gradientMagnitude']
 tTKScalarFieldCriticalPoints1.Backend = 'Default generic backend'
 
 SaveData("integralLines.pvtu", tTKGeometrySmoother2)
