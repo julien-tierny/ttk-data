@@ -28,11 +28,11 @@ To reproduce the above screenshot on 4 processes and 2 threads, go to your [ttk-
 ``` bash
 OMP_NUM_THREADS=2 mpirun -n 4 pvserver 
 ``` 
-Then enter the following command:
+In another command line enter the following command:
 ``` bash
 paraview 
 ```
-Now, follow the procedure described in paragraphs $7.2.2$ and $7.2.3$ of the following [ParaView documentation](https://docs.paraview.org/en/latest/ReferenceManual/parallelDataVisualization.html#configuring-a-server-connection) to connect your ParaView server to your client. Once that is done, you can open the state file `state/mpiExample.pvsm` in the ParaView GUI through `File` > `Load State`. 
+Now, follow the procedure described in paragraph $7.2.2$ of the following [ParaView documentation](https://docs.paraview.org/en/latest/ReferenceManual/parallelDataVisualization.html#configuring-a-server-connection) to connect your ParaView server to your client. Once that is done, you can open the state file `state/mpiExample.pvsm` in the ParaView GUI through `File` > `Load State`. 
 
 
 ## Python code
@@ -43,12 +43,7 @@ Now, follow the procedure described in paragraphs $7.2.2$ and $7.2.3$ of the fol
 
 To run the above Python script using 2 threads and 4 processes, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
 ``` bash
-OMP_NUM_THREADS=2 mpirun -n 4 pvbatch mpiExample.py 
-```
-Regarding performance, the optimal configuration depends on the architecture and on the OpenMP and OpenMPI versions. For example, to perform on 24-core nodes (without SMT -- simultaneous multithreading) using 64 nodes:
-
-``` bash
-OMPI_MPI_THREAD_LEVEL=1 OMP_PLACES=cores OMP_PROC_BIND=close OMP_NUM_THREADS=24 mpirun --bind-to none --map-by node --mca btl_openib_btls_per_lid 8 -n 64 pvbatch pipeline.py
+OMP_NUM_THREADS=2 mpirun -n 4 pvbatch python/mpiExample.py 
 ```
 
 By default, the dataset is resampled to $256^3$. To resample to a higher dimension, for example $2048^3$, enter the following command:
