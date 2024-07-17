@@ -29,13 +29,11 @@ To run the above Python script, go to your [ttk-data](https://github.com/topolog
 pvpython python/topologicalOptimization_darkySky.py
 ```
 
-
 ## Inputs
 - [ds14_scivis_0128_e4_dt04_1.0000.vtp](https://github.com/topology-tool-kit/ttk-data/raw/dev/ds14_scivis_0128_e4_dt04_1.0000.vtp): A point cloud dataset representing a simulation of the density of dark matter in the universe.
 
 ## Outputs
--  `darkSky_optimized.vti`: the infinitely persistent 1-cycles of the surface.
-
+-  `darkSky_optimized.vti`: the optimized dataset.
 
 ## C++/Python API
 
