@@ -3,78 +3,98 @@
 from paraview.simple import *
 
 # create a new 'XML Unstructured Grid Reader'
-pegasusvtu = XMLUnstructuredGridReader(FileName=['pegasus.vtu'])
-pegasusvtu.TimeArray = 'None'
+pegasusvtu = XMLUnstructuredGridReader(FileName=["pegasus.vtu"])
+pegasusvtu.TimeArray = "None"
 
 # create a new 'Clip'
 clip1 = Clip(Input=pegasusvtu)
-clip1.ClipType = 'Plane'
-clip1.HyperTreeGridClipper = 'Plane'
-clip1.Scalars = ['POINTS', '']
+clip1.ClipType = "Plane"
+clip1.HyperTreeGridClipper = "Plane"
+clip1.Scalars = ["POINTS", ""]
 
 # init the 'Plane' selected for 'ClipType'
 clip1.ClipType.Origin = [29.7661, 0.0, 0.0]
 clip1.ClipType.Normal = [-1.0, 0.0, 0.0]
 
 # init the 'Plane' selected for 'HyperTreeGridClipper'
-clip1.HyperTreeGridClipper.Origin = [11.567672729492188, -6.656782150268555, -1118.057861328125]
+clip1.HyperTreeGridClipper.Origin = [
+    11.567672729492188,
+    -6.656782150268555,
+    -1118.057861328125,
+]
 
 # create a new 'Clip'
 clip2 = Clip(Input=clip1)
-clip2.ClipType = 'Plane'
-clip2.HyperTreeGridClipper = 'Plane'
-clip2.Scalars = ['POINTS', '']
+clip2.ClipType = "Plane"
+clip2.HyperTreeGridClipper = "Plane"
+clip2.Scalars = ["POINTS", ""]
 
 # init the 'Plane' selected for 'ClipType'
 clip2.ClipType.Origin = [0.0, -40.2344, 0.0]
 clip2.ClipType.Normal = [0.0, -1.0, 0.0]
 
 # init the 'Plane' selected for 'HyperTreeGridClipper'
-clip2.HyperTreeGridClipper.Origin = [46.69016170501709, -9.690824508666992, -1120.631591796875]
+clip2.HyperTreeGridClipper.Origin = [
+    46.69016170501709,
+    -9.690824508666992,
+    -1120.631591796875,
+]
 
 # create a new 'Clip'
 clip3 = Clip(Input=clip2)
-clip3.ClipType = 'Plane'
-clip3.HyperTreeGridClipper = 'Plane'
-clip3.Scalars = ['POINTS', '']
+clip3.ClipType = "Plane"
+clip3.HyperTreeGridClipper = "Plane"
+clip3.Scalars = ["POINTS", ""]
 
 # init the 'Plane' selected for 'ClipType'
 clip3.ClipType.Origin = [0.0, 0.0, -1141.19]
 clip3.ClipType.Normal = [0.0, 0.0, -1.0]
 
 # init the 'Plane' selected for 'HyperTreeGridClipper'
-clip3.HyperTreeGridClipper.Origin = [46.69016170501709, 7.71148681640625, -1107.7692260742188]
+clip3.HyperTreeGridClipper.Origin = [
+    46.69016170501709,
+    7.71148681640625,
+    -1107.7692260742188,
+]
 
 # create a new 'Clip'
 clip4 = Clip(Input=clip3)
-clip4.ClipType = 'Plane'
-clip4.HyperTreeGridClipper = 'Plane'
-clip4.Scalars = ['POINTS', '']
+clip4.ClipType = "Plane"
+clip4.HyperTreeGridClipper = "Plane"
+clip4.Scalars = ["POINTS", ""]
 
 # init the 'Plane' selected for 'ClipType'
 clip4.ClipType.Origin = [35.8833, 0.0, 0.0]
 
 # init the 'Plane' selected for 'HyperTreeGridClipper'
-clip4.HyperTreeGridClipper.Origin = [46.69016170501709, 7.71148681640625, -1107.2310791015625]
+clip4.HyperTreeGridClipper.Origin = [
+    46.69016170501709,
+    7.71148681640625,
+    -1107.2310791015625,
+]
 
 # create a new 'Clip'
 clip5 = Clip(Input=clip4)
-clip5.ClipType = 'Plane'
-clip5.HyperTreeGridClipper = 'Plane'
-clip5.Scalars = ['POINTS', '']
+clip5.ClipType = "Plane"
+clip5.HyperTreeGridClipper = "Plane"
+clip5.Scalars = ["POINTS", ""]
 
 # init the 'Plane' selected for 'ClipType'
 clip5.ClipType.Origin = [0.0, -28.6559, 0.0]
 clip5.ClipType.Normal = [0.0, 1.0, 0.0]
 
 # init the 'Plane' selected for 'HyperTreeGridClipper'
-clip5.HyperTreeGridClipper.Origin = [32.824700355529785, 7.71148681640625, -1107.2310791015625]
+clip5.HyperTreeGridClipper.Origin = [
+    32.824700355529785,
+    7.71148681640625,
+    -1107.2310791015625,
+]
 
 # create a new 'Clip'
 clip6 = Clip(Input=clip5)
-clip6.ClipType = 'Plane'
-clip6.HyperTreeGridClipper = 'Plane'
-clip6.Scalars = ['POINTS', '']
+clip6.ClipType = "Plane"
+clip6.HyperTreeGridClipper = "Plane"
+clip6.Scalars = ["POINTS", ""]
 
 # init the 'Plane' selected for 'ClipType'
 clip6.ClipType.Origin = [0.0, 0.0, -1133.85]
@@ -90,42 +110,44 @@ tTKSignedDistanceField1.ExpandBox = 0
 
 # create a new 'Calculator'
 calculator2 = Calculator(Input=tTKSignedDistanceField1)
-calculator2.Function = '-signedDistanceField'
+calculator2.Function = "-signedDistanceField"
 
 # create a new 'TTK PersistenceDiagram'
 tTKPersistenceDiagram3 = TTKPersistenceDiagram(Input=calculator2)
-tTKPersistenceDiagram3.ScalarField = ['POINTS', 'Result']
-tTKPersistenceDiagram3.InputOffsetField = ['POINTS', 'Result']
+tTKPersistenceDiagram3.ScalarField = ["POINTS", "Result"]
+tTKPersistenceDiagram3.InputOffsetField = ["POINTS", "Result"]
 
 # create a new 'Threshold'
 threshold4 = Threshold(Input=tTKPersistenceDiagram3)
-threshold4.Scalars = ['CELLS', 'Persistence']
+threshold4.Scalars = ["CELLS", "Persistence"]
 threshold4.LowerThreshold = 0.277
 threshold4.UpperThreshold = 0.278
 threshold4.Invert = 1
 
 # create a new 'TTK TopologicalSimplification'
-tTKTopologicalSimplification2 = TTKTopologicalSimplification(Domain=calculator2,
-    Constraints=threshold4)
-tTKTopologicalSimplification2.ScalarField = ['POINTS', 'Result']
-tTKTopologicalSimplification2.Backend = 'Numerical Optimization (2024)'
-tTKTopologicalSimplification2.InputOffsetField = ['POINTS', 'edgeCrossing']
-tTKTopologicalSimplification2.VertexIdentifierField = ['POINTS', 'CriticalType']
+tTKTopologicalSimplification2 = TTKTopologicalSimplification(
+    Domain=calculator2, Constraints=threshold4
+)
+tTKTopologicalSimplification2.ScalarField = ["POINTS", "Result"]
+tTKTopologicalSimplification2.Backend = "Numerical Optimization (2024)"
+tTKTopologicalSimplification2.InputOffsetField = ["POINTS", "edgeCrossing"]
+tTKTopologicalSimplification2.VertexIdentifierField = ["POINTS", "CriticalType"]
 tTKTopologicalSimplification2.StoppingConditionCoefficient = 1e-05
 tTKTopologicalSimplification2.MaximumIterationNumber = 125
-tTKTopologicalSimplification2.CancellationPrimitive = 'Fill-only'
+tTKTopologicalSimplification2.CancellationPrimitive = "Fill-only"
 tTKTopologicalSimplification2.GradientStepSize = 1.252
 
 # create a new 'TTK TopologicalSimplification'
-tTKTopologicalSimplification1 = TTKTopologicalSimplification(Domain=calculator2,
-    Constraints=threshold4)
-tTKTopologicalSimplification1.ScalarField = ['POINTS', 'Result']
-tTKTopologicalSimplification1.Backend = 'Numerical Optimization (2024)'
-tTKTopologicalSimplification1.InputOffsetField = ['POINTS', 'edgeCrossing']
-tTKTopologicalSimplification1.VertexIdentifierField = ['POINTS', 'CriticalType']
+tTKTopologicalSimplification1 = TTKTopologicalSimplification(
+    Domain=calculator2, Constraints=threshold4
+)
+tTKTopologicalSimplification1.ScalarField = ["POINTS", "Result"]
+tTKTopologicalSimplification1.Backend = "Numerical Optimization (2024)"
+tTKTopologicalSimplification1.InputOffsetField = ["POINTS", "edgeCrossing"]
+tTKTopologicalSimplification1.VertexIdentifierField = ["POINTS", "CriticalType"]
 tTKTopologicalSimplification1.StoppingConditionCoefficient = 1e-05
 tTKTopologicalSimplification1.MaximumIterationNumber = 125
-tTKTopologicalSimplification1.CancellationPrimitive = 'Cut-only'
+tTKTopologicalSimplification1.CancellationPrimitive = "Cut-only"
 tTKTopologicalSimplification1.GradientStepSize = 1.1
 
 # save the output
