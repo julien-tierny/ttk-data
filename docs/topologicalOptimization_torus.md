@@ -33,8 +33,8 @@ pvpython python/topologicalOptimization_torus.py
 - [torus.vtu](https://github.com/topology-tool-kit/ttk-data/raw/dev/torus.vtu): A surface representing a torus.
 
 ## Outputs
--  `topoOpt_torus_fill.vti`: the optimized dataset with the fill strategy.
--  `topoOpt_torus_cut.vti`: the optimized dataset with the cut strategy.
+-  `topoOpt_torus_fill.vtp`: the optimized dataset with the fill strategy.
+-  `topoOpt_torus_cut.vtp`: the optimized dataset with the cut strategy.
 
 ## C++/Python API
 
