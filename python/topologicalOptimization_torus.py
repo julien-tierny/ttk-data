@@ -65,5 +65,5 @@ contour3.ContourBy = ["POINTS", "signedDistanceField"]
 contour3.Isosurfaces = [0.0]
 contour3.PointMergeMethod = "Uniform Binning"
 
-SaveData("topoOpt_torus_cut.vtu", contour2)
-SaveData("topoOpt_torus_fill.vtu", contour3)
+SaveData("topoOpt_torus_cut.vtp", contour2)
+SaveData("topoOpt_torus_fill.vtp", contour3)
