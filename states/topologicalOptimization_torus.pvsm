@@ -50021,11 +50021,11 @@
     </Proxy>
     <Proxy group="sources" type="XMLUnstructuredGridReader" id="9952" servers="1">
       <Property name="FileName" id="9952.FileName" number_of_elements="1">
-        <Element index="0" value="/home/mathieu/ttk/ttk-data/torus.vtu"/>
+        <Element index="0" value="torus.vtu"/>
         <Domain name="files" id="9952.FileName.files"/>
       </Property>
       <Property name="FileNameInfo" id="9952.FileNameInfo" number_of_elements="1">
-        <Element index="0" value="/home/mathieu/ttk/ttk-data/torus.vtu"/>
+        <Element index="0" value="torus.vtu"/>
       </Property>
       <Property name="TimestepValues" id="9952.TimestepValues"/>
       <Property name="CellArrayInfo" id="9952.CellArrayInfo" number_of_elements="2">
