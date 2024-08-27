@@ -43,7 +43,7 @@ tTKTopologicalSimplification1 = TTKTopologicalSimplification(
     Domain=tTKScalarFieldNormalizer1, Constraints=threshold1
 )
 tTKTopologicalSimplification1.ScalarField = ["POINTS", "SplatterValues"]
-tTKTopologicalSimplification1.Backend = "Numerical Optimization (2024)"
+tTKTopologicalSimplification1.Backend = "Topological Optimization (IEEE VIS 2024)"
 tTKTopologicalSimplification1.InputOffsetField = ["POINTS", "SplatterValues"]
 tTKTopologicalSimplification1.VertexIdentifierField = ["POINTS", "CriticalType"]
 tTKTopologicalSimplification1.StoppingConditionCoefficient = 0.0001
