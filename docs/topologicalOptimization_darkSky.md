@@ -8,7 +8,7 @@ This example simplifies all the persistence pairs below 25% of the maximum persi
 This example first loads the point cloud then applies a gaussian resampling to create a scalar field defined on a regular grid.
 Then the scalar field is smoothed with [ScalarFieldSmoother](https://topology-tool-kit.github.io/doc/html/classttkScalarFieldSmoother.html) (with 5 iterations) and normalized with [ScalarFieldNormalizer](https://topology-tool-kit.github.io/doc/html/classttkScalarFieldNormalizer.html).
 The persistence diagram is computed using [PersistenceDiagram](https://topology-tool-kit.github.io/doc/html/classttkPersistenceDiagram.html) and then thresholded to create a target diagram where the persistence pairs having persistence below 25% of the maximum persistence are removed.
-Finally, using the numerical optimization backend of [TopologicalSimplification](https://topology-tool-kit.github.io/doc/html/classttkTopologicalSimplification.html), it optimizes the scalar field to remove, as much as possible, the pairs which are not in the target diagram.
+Finally, using the topological optimization backend of [TopologicalSimplification](https://topology-tool-kit.github.io/doc/html/classttkTopologicalSimplification.html), it optimizes the scalar field to remove, as much as possible, the pairs which are not in the target diagram.
 
 The python script computes the topological optimization and saves the optimized scalar field.
 
