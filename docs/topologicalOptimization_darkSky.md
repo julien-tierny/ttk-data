@@ -12,7 +12,7 @@ Finally, using the numerical optimization backend of [TopologicalSimplification]
 
 The python script computes the topological optimization and saves the optimized scalar field.
 
-Note that the optimization will take a long time (typically, around 40 minutes). For interactive visualization purposes, we suggest to first run the optimization in batch mode with [pvpython](#python-code) and then run the post-process visualization state `topologicalOptimization_darkSky_postProcess.pvsm` (below).
+Note that the optimization will take a long time (typically, around 40 minutes). For interactive visualization purposes, we suggest to first run the optimization in batch mode with `pvpython` (see [instructions below](#python-code)) and then run the post-process visualization state `topologicalOptimization_darkSky_postProcess.pvsm` (see [instructions below](#paraview)).
 
 ## ParaView
 To reproduce the above screenshot (and run the optimization online, around 40 minutes), go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
