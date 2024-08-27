@@ -6,7 +6,6 @@ ds14_scivis_0128_e4_dt04_10000vtp = XMLPolyDataReader(
     FileName=["./ds14_scivis_0128_e4_dt04_1.0000.vtp"]
 )
 ds14_scivis_0128_e4_dt04_10000vtp.PointArrayStatus = ["DarkMatter_Phi"]
-ds14_scivis_0128_e4_dt04_10000vtp.TimeArray = "None"
 
 # create a new 'Gaussian Resampling'
 gaussianResampling1 = GaussianResampling(Input=ds14_scivis_0128_e4_dt04_10000vtp)
@@ -21,7 +20,6 @@ gaussianResampling1.FillVolumeBoundary = 0
 tTKScalarFieldSmoother1 = TTKScalarFieldSmoother(Input=gaussianResampling1)
 tTKScalarFieldSmoother1.ScalarField = ["POINTS", "SplatterValues"]
 tTKScalarFieldSmoother1.IterationNumber = 5
-tTKScalarFieldSmoother1.MaskField = ["POINTS", "SplatterValues"]
 
 # create a new 'TTK ScalarFieldNormalizer'
 tTKScalarFieldNormalizer1 = TTKScalarFieldNormalizer(Input=tTKScalarFieldSmoother1)
@@ -30,7 +28,6 @@ tTKScalarFieldNormalizer1.ScalarField = ["POINTS", "SplatterValues"]
 # create a new 'TTK PersistenceDiagram'
 tTKPersistenceDiagram1 = TTKPersistenceDiagram(Input=tTKScalarFieldNormalizer1)
 tTKPersistenceDiagram1.ScalarField = ["POINTS", "SplatterValues"]
-tTKPersistenceDiagram1.InputOffsetField = ["POINTS", "SplatterValues"]
 
 # create a new 'Threshold'
 threshold1 = Threshold(Input=tTKPersistenceDiagram1)
@@ -44,8 +41,6 @@ tTKTopologicalSimplification1 = TTKTopologicalSimplification(
 )
 tTKTopologicalSimplification1.ScalarField = ["POINTS", "SplatterValues"]
 tTKTopologicalSimplification1.Backend = "Topological Optimization (IEEE VIS 2024)"
-tTKTopologicalSimplification1.InputOffsetField = ["POINTS", "SplatterValues"]
-tTKTopologicalSimplification1.VertexIdentifierField = ["POINTS", "CriticalType"]
 tTKTopologicalSimplification1.StoppingConditionCoefficient = 0.0001
 tTKTopologicalSimplification1.GradientStepSize = 0.75
 
