@@ -1,6 +1,6 @@
 # Topological Optimization DarkySky
 
-![Topological Optimization DarkySky example Image]()
+![Topological Optimization DarkySky example Image](https://topology-tool-kit.github.io/img/gallery/topologicalOptimization_darkSky.png)
 
 ## Pipeline description
 This example simplifies all the persistence pairs below 25% of the maximum persistence of the density of dark matter in an astrophysics simulation.
@@ -8,25 +8,33 @@ This example simplifies all the persistence pairs below 25% of the maximum persi
 This example first loads the point cloud then applies a gaussian resampling to create a scalar field defined on a regular grid.
 Then the scalar field is smoothed with [ScalarFieldSmoother](https://topology-tool-kit.github.io/doc/html/classttkScalarFieldSmoother.html) (with 5 iterations) and normalized with [ScalarFieldNormalizer](https://topology-tool-kit.github.io/doc/html/classttkScalarFieldNormalizer.html).
 The persistence diagram is computed using [PersistenceDiagram](https://topology-tool-kit.github.io/doc/html/classttkPersistenceDiagram.html) and then thresholded to create a target diagram where the persistence pairs having persistence below 25% of the maximum persistence are removed.
-Finally, using the numerical optimization backend of [TopologicalSimplification](https://topology-tool-kit.github.io/doc/html/classttkTopologicalSimplification.html), it optimizes the scalar field to remove the most possible the pairs not in the target diagram.
+Finally, using the numerical optimization backend of [TopologicalSimplification](https://topology-tool-kit.github.io/doc/html/classttkTopologicalSimplification.html), it optimizes the scalar field to remove, as much as possible, the pairs which are not in the target diagram.
 
 The python script computes the topological optimization and saves the optimized scalar field.
 
+Note that the optimization will take a long time (typically, around xx minutes). For interactive visualization purposes, we suggest to first run the optimization in batch mode with [pvpython](#python-code) and then run the post-process visualization state `topologicalOptimization_darkSky_postProcess.pvsm` (below).
+
 ## ParaView
-To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
+To reproduce the above screenshot (and run the optimization online), go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
 ``` bash
-paraview states/topologicalOptimization_darkySky.pvsm
+paraview states/topologicalOptimization_darkSky.pvsm
 ```
+
+If you have already computed the optimization with [pvpython](#python-code), simply enter:
+``` bash
+paraview states/topologicalOptimization_darkSky_postProcess.pvsm
+```
+
 
 ## Python code
 
 ``` python  linenums="1"
---8<-- "python/topologicalOptimization_darkySky.py"
+--8<-- "python/topologicalOptimization_darkSky.py"
 ```
 
 To run the above Python script, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
 ``` bash
-pvpython python/topologicalOptimization_darkySky.py
+pvpython python/topologicalOptimization_darkSky.py
 ```
 
 ## Inputs
