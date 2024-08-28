@@ -1,4 +1,4 @@
-# Topological Optimization DarkySky
+# Topological Optimization DarkSky
 
 ![Topological Optimization DarkySky example Image](https://topology-tool-kit.github.io/img/gallery/topologicalOptimization_darkSky.png)
 
