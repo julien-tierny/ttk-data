@@ -10,7 +10,7 @@ Here we use the [CinemaReader](https://topology-tool-kit.github.io/doc/html/clas
 
 In a pre-processing, the scalar fields are topologically simplified by persistence using the [TopologicalSimplificationByPersistence](https://topology-tool-kit.github.io/doc/html/classttkTopologicalSimplificationByPersistence.html) filter.
 The filter is automatically applied to each member of the MultiBlockDataSet.
-Then, for each simplified member field, the contour tree is computed using the [FTMTree](https://topology-tool-kit.github.io/doc/html/classttkFTMTree.html) module.
+Then, for each simplified member field, the contour tree is computed using the [ContourTree](https://topology-tool-kit.github.io/doc/html/classttkContourTree.html) module.
 
 The resulting MultiBlock of contour trees is then used as input for the [Contour Tree Alignment](https://topology-tool-kit.github.io/doc/html/classttkContourTreeAlignment.html) filter.
 This alignment is a super tree of all contour trees and can be seen as a representative of the topology of the whole ensemble.
@@ -27,7 +27,7 @@ The extraction is done using the [TTKExtract](https://topology-tool-kit.github.i
 ## ParaView
 To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
 ``` bash
-paraview --state=states/contourTreeAlignment.pvsm
+paraview states/contourTreeAlignment.pvsm
 ```
 
 ## Python code
@@ -62,7 +62,7 @@ pvpython python/contourTreeAlignment.py
 
 [CinemaReader](https://topology-tool-kit.github.io/doc/html/classttkCinemaReader.html)
 
-[ContourTree (FTM)](https://topology-tool-kit.github.io/doc/html/classttkFTMTree.html)
+[ContourTree](https://topology-tool-kit.github.io/doc/html/classttkContourTree.html)
 
 [ContourTreeAlignment](https://topology-tool-kit.github.io/doc/html/classttkContourTreeAlignment.html)
 

@@ -4,7 +4,7 @@
 
 ## Pipeline description
 This example first loads an ensemble of scalar fields inside a cinema database from disk.
-Then, the [FTMTree](https://topology-tool-kit.github.io/doc/html/classttkFTMTree.html) is computed on each scalar field for the Join Tree and the Split Tree.
+Then, the [MergeTree](https://topology-tool-kit.github.io/doc/html/classttkMergeTree.html) is computed on each scalar field for the Join Tree and the Split Tree.
 
 All these trees are passed to [MergeTreeClustering](https://topology-tool-kit.github.io/doc/html/classttkMergeTreeClustering.html) to compute a clustering in the metric space of merge trees. Each input is considered as a tuple consisting of the Join Tree and the Split Tree of the corresponding scalar field. Each centroid is also a tuple of this kind and a distance between two tuples is the distance between their Join Tree plus the distance between their Split Trees.
 
@@ -21,7 +21,7 @@ The python script computes the MDS and saves the resulting 2D points (for input 
 ## ParaView
 To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
 ``` bash
-paraview --state=states/mergeTreeClustering.pvsm
+araview states/mergeTreeClustering.pvsm
 ```
 
 ## Python code
@@ -55,7 +55,7 @@ pvpython python/mergeTreeClustering.py
 
 [FlattenMultiBlock](https://topology-tool-kit.github.io/doc/html/classttkFlattenMultiBlock.html)
 
-[FTMTree](https://topology-tool-kit.github.io/doc/html/classttkFTMTree.html)
+[MergeTree](https://topology-tool-kit.github.io/doc/html/classttkMergeTree.html)
 
 [MergeTreeClustering](https://topology-tool-kit.github.io/doc/html/classttkMergeTreeClustering.html)
 

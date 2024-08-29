@@ -1,4 +1,4 @@
-# Welcome to the TTK Examples!
+# Welcome to the TTK Online Example Database!
 
 This website hosts a list of data analysis pipelines exemplifying the usage of [TTK](https://topology-tool-kit.github.io/) with
 [ParaView](http://paraview.org) and its Python API `pvpython`.
@@ -17,7 +17,7 @@ Each example includes:
 - a description of the inputs and outputs
 - pointers to the corresponding C++/Python documentation
 
-This documentation assumes a default TTK installation (with the `pvpython` API support enabled) and that the repository [ttk-data](https://github.com/topology-tool-kit/ttk-data) has been downloaded locally.
+This documentation assumes a default installation of the latest version of TTK (with the `pvpython` API support enabled) and that the repository [ttk-data](https://github.com/topology-tool-kit/ttk-data) has been downloaded locally.
 
 If you have any questions regarding these examples, please let us know by sending an email to the [TTK user mailing list](mailto:ttk-users@googlegroups.com)!
 
@@ -30,6 +30,7 @@ If you have any questions regarding these examples, please let us know by sendin
 | [Built-in example 1](BuiltInExample1/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/builtinExample1.jpg) |
 | [Interaction site](interactionSites/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/interactionSites.jpg) |
 | [Morse molecule](morseMolecule/) |![ExampleImage](https://topology-tool-kit.github.io/img/gallery/morseMolecule.jpg) |
+| [Morse-Smale segmentation AT](morseSmaleSegmentation_at/) |![ExampleImage](https://topology-tool-kit.github.io/img/gallery/morseSmaleSegmentation_at.jpg) |
 | [Tectonic puzzle](tectonicPuzzle/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/geology.jpg) |
 | [CT bones](ctBones/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/ctBones.jpg) |
 | [Tribute](tribute/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/tribute.jpg) |
@@ -65,16 +66,22 @@ If you have any questions regarding these examples, please let us know by sendin
 |:-:|:-:|
 | [Persistence diagram distance](persistenceDiagramDistance/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistenceDiagramDistance.jpg) |
 | [Persistence diagram clustering](persistenceDiagramClustering/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistenceDiagramClustering.jpg) |
+| [Clustering Kelvin Helmoltz Instabilities](clusteringKelvinHelmholtzInstabilities/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/clusteringKelvinHelmholtzInstabilities.jpg) |
+| [Persistence diagram Wasserstein Auto-Encoding](persistenceDiagramWAE/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistenceDiagramWAE.jpg) |
+| [Merge feature tracking](mergeTreeFeatureTracking/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/mergeTreeFeatureTracking.jpg) |
 | [Merge tree clustering](mergeTreeClustering/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/mergeTreeClustering.jpg) |
+| [Merge tree principal geodesic analysis](mergeTreePGA/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/mergeTreePGA.jpg) |
+| [Merge tree Wasserstein Auto-Encoding](mergeTreeWAE/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/mergeTreeWAE.jpg) |
 | [Contour tree alignment](contourTreeAlignment/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/contourTreeAlignment.jpg) |
 | [Persistent Generators Periodic Picture](persistentGenerators_periodicPicture/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistentGenerators_periodicPicture.jpg) |
-| [Clustering Kelvin Helmoltz Instabilities](clusteringKelvinHelmholtzInstabilities/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/clusteringKelvinHelmholtzInstabilities.jpg) |
 
 
 ## High-dimensional / point cloud data
 
 | Name | Screenshot |
 |:-:|:-:|
+| [TopoMap Teaser](topoMapTeaser/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/topoMapTeaser.jpg) |
+| [Persistent Generators Household Analysis](persistentGenerators_householdAnalysis/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistentGenerators_householdAnalysis.jpg) |
 | [Karhunen-Love Digits 64-Dimensions](karhunenLoveDigits64Dimensions/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/karhunenLoveDigits64Dimensions.jpg) |
 | [Persistence clustering0](persistenceClustering0/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistenceClustering0.jpeg) |
 | [Persistence clustering1](persistenceClustering1/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistenceClustering1.jpeg) |
@@ -85,7 +92,6 @@ If you have any questions regarding these examples, please let us know by sendin
 | [1-manifold learning](1manifoldLearning/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/1manifoldLearning.jpeg) |
 | [1-manifold learning circles ](1manifoldLearningCircles/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/1manifoldLearningCircles.jpeg) |
 | [2-manifold learning](2manifoldLearning/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/2manifoldLearning.jpeg) |
-| [Persistent Generators Household Analysis](persistentGenerators_householdAnalysis/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistentGenerators_householdAnalysis.jpg) |
 
 
 ## In-situ features
