@@ -1,6 +1,6 @@
 # Persistence Diagram Principal Geodesic Analysis 
 
-![Persistence Diagram Principal Geodesic Analysis example Image]()
+![Persistence Diagram Principal Geodesic Analysis example Image](https://topology-tool-kit.github.io/img/gallery/persistenceDiagramPGA.jpg)
 
 ## Pipeline description
 This example first loads an ensemble of scalar fields inside a cinema database from disk.
@@ -23,7 +23,7 @@ The python script computes the PD-PGA and saves the resulting coefficients of th
 ## ParaView
 To reproduce the above screenshot, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
 ``` bash
-$ paraview --state=states/persistenceDiagramPGA.pvsm
+paraview --state=states/persistenceDiagramPGA.pvsm
 ```
 
 ## Python code
@@ -31,6 +31,12 @@ $ paraview --state=states/persistenceDiagramPGA.pvsm
 ``` python  linenums="1"
 --8<-- "python/persistenceDiagramPGA.py"
 ```
+
+To run the above Python script, go to your [ttk-data](https://github.com/topology-tool-kit/ttk-data) directory and enter the following command:
+``` bash
+pvpython python/persistenceDiagramPGA.py
+```
+
 
 ## Inputs
 - [Isabel.cdb](https://github.com/topology-tool-kit/ttk-data/tree/dev/Isabel.cdb): a cinema database containing 12 regular grids.
