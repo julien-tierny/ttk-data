@@ -3,18 +3,20 @@
 from paraview.simple import *
 
 # create a new 'TTK CinemaReader'
-tTKCinemaReader1 = TTKCinemaReader(DatabasePath='./Isabel.cdb')
+tTKCinemaReader1 = TTKCinemaReader(DatabasePath="./Isabel.cdb")
 
 # create a new 'TTK CinemaProductReader'
 tTKCinemaProductReader1 = TTKCinemaProductReader(Input=tTKCinemaReader1)
 
 # create a new 'TTK PersistenceDiagram'
 tTKPersistenceDiagram1 = TTKPersistenceDiagram(Input=tTKCinemaProductReader1)
-tTKPersistenceDiagram1.ScalarField = ['POINTS', 'velocityMag']
-tTKPersistenceDiagram1.Backend = 'FTM (IEEE TPSD 2019)'
+tTKPersistenceDiagram1.ScalarField = ["POINTS", "velocityMag"]
+tTKPersistenceDiagram1.Backend = "FTM (IEEE TPSD 2019)"
 
 # create a new 'TTK MergeTreePrincipalGeodesics'
-tTKMergeTreePrincipalGeodesics1 = TTKMergeTreePrincipalGeodesics(Input=tTKPersistenceDiagram1)
+tTKMergeTreePrincipalGeodesics1 = TTKMergeTreePrincipalGeodesics(
+    Input=tTKPersistenceDiagram1
+)
 tTKMergeTreePrincipalGeodesics1.NormalizedWasserstein = 0
 tTKMergeTreePrincipalGeodesics1.BarycenterSizeLimitPercent = 20.0
 tTKMergeTreePrincipalGeodesics1.Deterministic = 1
