@@ -14,7 +14,7 @@ A distance matrix is then computed with [MergeTreeDistanceMatrix](https://topolo
 
 In terms of visualisation, a scalar field of each cluster is displayed. The original diagrams are displayed alongside their reconstruction on their right. The persistence pairs of the diagrams are colored by ID to see what features they correspond to in the scalar field.
 
-The 3D and 2D surface are displayed with the persistence correlation view on the right. The 12 scalar fields are colored by Cluster ID. 
+The 3D and 2D surfaces are displayed with the persistence correlation view on the right. The 12 scalar fields are colored by Cluster ID. 
 
 The python script computes the PD-PGA and saves the resulting coefficients of the input diagrams.
 
@@ -58,15 +58,21 @@ pvpython python/persistenceDiagramPGA.py
 
 [GeometrySmoother](https://topology-tool-kit.github.io/doc/html/classttkGeometrySmoother.html)
 
+[IcospheresFromPoints](https://topology-tool-kit.github.io/doc/html/classttkIcospheresFromPoints.html)
+
+[IdentifyByScalarField](https://topology-tool-kit.github.io/doc/html/classttkIdentifyByScalarField.html)
+
 [MergeBockTables](https://topology-tool-kit.github.io/doc/html/classttkMergeBockTables.html)
+
+[MergeTreeDistanceMatrix](https://topology-tool-kit.github.io/doc/html/classttkMergeTreeDistanceMatrix.html)
 
 [MergeTreePrincipalGeodesics](https://topology-tool-kit.github.io/doc/html/classttkMergeTreePrincipalGeodesics.html)
 
 [MergeTreePrincipalGeodesicsDecoding](https://topology-tool-kit.github.io/doc/html/classttkMergeTreePrincipalGeodesicsDecoding.html)
 
-[MergeTreeDistanceMatrix](https://topology-tool-kit.github.io/doc/html/classttkMergeTreeDistanceMatrix.html)
-
 [PersistenceDiagram](https://topology-tool-kit.github.io/doc/html/classttkPersistenceDiagram.html)
+
+[PointSetToCurve](https://topology-tool-kit.github.io/doc/html/classttkPointSetToCurve.html)
 
 [PointSetToSurface](https://topology-tool-kit.github.io/doc/html/classttkPointSetToSurface.html)
 
