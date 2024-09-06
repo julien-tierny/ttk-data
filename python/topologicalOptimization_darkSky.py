@@ -21,12 +21,8 @@ tTKScalarFieldSmoother1 = TTKScalarFieldSmoother(Input=gaussianResampling1)
 tTKScalarFieldSmoother1.ScalarField = ["POINTS", "SplatterValues"]
 tTKScalarFieldSmoother1.IterationNumber = 5
 
-# create a new 'TTK ScalarFieldNormalizer'
-tTKScalarFieldNormalizer1 = TTKScalarFieldNormalizer(Input=tTKScalarFieldSmoother1)
-tTKScalarFieldNormalizer1.ScalarField = ["POINTS", "SplatterValues"]
-
 # create a new 'TTK PersistenceDiagram'
-tTKPersistenceDiagram1 = TTKPersistenceDiagram(Input=tTKScalarFieldNormalizer1)
+tTKPersistenceDiagram1 = TTKPersistenceDiagram(Input=tTKScalarFieldSmoother1)
 tTKPersistenceDiagram1.ScalarField = ["POINTS", "SplatterValues"]
 
 # create a new 'Threshold'
@@ -37,7 +33,7 @@ threshold1.UpperThreshold = 2.0
 
 # create a new 'TTK TopologicalSimplification'
 tTKTopologicalSimplification1 = TTKTopologicalSimplification(
-    Domain=tTKScalarFieldNormalizer1, Constraints=threshold1
+    Domain=tTKScalarFieldSmoother1, Constraints=threshold1
 )
 tTKTopologicalSimplification1.ScalarField = ["POINTS", "SplatterValues"]
 tTKTopologicalSimplification1.Backend = "Topological Optimization (IEEE VIS 2024)"
