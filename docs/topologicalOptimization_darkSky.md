@@ -6,7 +6,7 @@
 This example simplifies all the persistence pairs below 25% of the maximum persistence of the density of dark matter in an astrophysics simulation.
 
 This example first loads the point cloud then applies a gaussian resampling to create a scalar field defined on a regular grid.
-Then the scalar field is smoothed with [ScalarFieldSmoother](https://topology-tool-kit.github.io/doc/html/classttkScalarFieldSmoother.html) (with 5 iterations) and normalized with [ScalarFieldNormalizer](https://topology-tool-kit.github.io/doc/html/classttkScalarFieldNormalizer.html).
+Then the scalar field is smoothed with [ScalarFieldSmoother](https://topology-tool-kit.github.io/doc/html/classttkScalarFieldSmoother.html) (with 5 iterations).
 The persistence diagram is computed using [PersistenceDiagram](https://topology-tool-kit.github.io/doc/html/classttkPersistenceDiagram.html) and then thresholded to create a target diagram where the persistence pairs having persistence below 25% of the maximum persistence are removed.
 Finally, using the topological optimization backend of [TopologicalSimplification](https://topology-tool-kit.github.io/doc/html/classttkTopologicalSimplification.html), it optimizes the scalar field to remove, as much as possible, the pairs which are not in the target diagram.
 
@@ -46,8 +46,6 @@ pvpython python/topologicalOptimization_darkSky.py
 ## C++/Python API
 
 [PersistenceDiagram](https://topology-tool-kit.github.io/doc/html/classttkPersistenceDiagram.html)
-
-[ScalarFieldNormalizer](https://topology-tool-kit.github.io/doc/html/classttkScalarFieldNormalizer.html)
 
 [ScalarFieldSmoother](https://topology-tool-kit.github.io/doc/html/classttkScalarFieldSmoother.html)
 
