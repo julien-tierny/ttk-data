@@ -1,4 +1,4 @@
-# Genus Repair via Topological Optimization
+# Topological Optimization for Pegasus Genus Repair
 
 ![Topological Optimization Pegasus example Image](https://topology-tool-kit.github.io/img/gallery/topologicalOptimizationPegasus.jpg)
 
@@ -10,7 +10,7 @@ It then computes a signed distance field to create a scalar field defined on a r
 The persistence diagram is computed using the [PersistenceDiagram](https://topology-tool-kit.github.io/doc/html/classttkPersistenceDiagram.html) module and then it is thresholded to create a target diagram where the persistence pair corresponding to the handle defect is removed.
 Finally, using the numerical optimization backend of [TopologicalSimplification](https://topology-tool-kit.github.io/doc/html/classttkTopologicalSimplification.html), the pipeline optimizes the scalar field to remove the handle defect from the level set corresponding to the considered surface. This removal is exemplified with the cutting (bottom left) and filling (bottom right) strategies.
 
-Note that the handle defect can be detected by identifying the [PersistentGenerators](https://topology-tool-kit.github.io/doc/html/classttkPersistentGenerators.html) of smallest size. In this example, the [PersistentGenerators](https://topology-tool-kit.github.io/doc/html/classttkPersistentGenerators.html) are computed out of a low resolution signed distance field (to make the example easily computable). To detect the handle defect, a  higher resolution is required (typically `1024^3` -- expect hours of computation -- but then TTK needs to be built with 64 bit identifiers, `TTK_ENABLE_64BIT_IDS=ON`).
+Note that the handle defect can be detected by identifying the [PersistentGenerators](https://topology-tool-kit.github.io/doc/html/classttkPersistentGenerators.html) of smallest size. In this example, the [PersistentGenerators](https://topology-tool-kit.github.io/doc/html/classttkPersistentGenerators.html) are computed out of a low resolution signed distance field (to make the example easily computable). To detect the handle defect, a higher resolution is required (typically `1024^3` -- expect hours of computation -- but then TTK needs to be built with 64 bit identifiers, `TTK_ENABLE_64BIT_IDS=ON`).
 
 The python script computes the topological optimization and saves the optimized scalar fields with the cutting and the filling strategies.
 
@@ -39,6 +39,8 @@ pvpython python/topologicalOptimization_pegasus.py
 -  `topoOpt_pegasus_cut.vti`: the optimized dataset with the cut strategy.
 
 ## C++/Python API
+
+[GeometrySmoother](https://topology-tool-kit.github.io/doc/html/classttkGeometrySmoother.html)
 
 [PersistenceDiagram](https://topology-tool-kit.github.io/doc/html/classttkPersistenceDiagram.html)
 

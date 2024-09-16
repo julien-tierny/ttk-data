@@ -4,41 +4,22 @@ from paraview.simple import *
 
 # create a new 'XML Unstructured Grid Reader'
 pegasusvtu = XMLUnstructuredGridReader(FileName=["pegasus.vtu"])
-pegasusvtu.TimeArray = "None"
 
 # create a new 'Clip'
 clip1 = Clip(Input=pegasusvtu)
 clip1.ClipType = "Plane"
-clip1.HyperTreeGridClipper = "Plane"
-clip1.Scalars = ["POINTS", ""]
 
 # init the 'Plane' selected for 'ClipType'
 clip1.ClipType.Origin = [29.7661, 0.0, 0.0]
 clip1.ClipType.Normal = [-1.0, 0.0, 0.0]
 
-# init the 'Plane' selected for 'HyperTreeGridClipper'
-clip1.HyperTreeGridClipper.Origin = [
-    11.567672729492188,
-    -6.656782150268555,
-    -1118.057861328125,
-]
-
 # create a new 'Clip'
 clip2 = Clip(Input=clip1)
 clip2.ClipType = "Plane"
-clip2.HyperTreeGridClipper = "Plane"
-clip2.Scalars = ["POINTS", ""]
 
 # init the 'Plane' selected for 'ClipType'
 clip2.ClipType.Origin = [0.0, -40.2344, 0.0]
 clip2.ClipType.Normal = [0.0, -1.0, 0.0]
-
-# init the 'Plane' selected for 'HyperTreeGridClipper'
-clip2.HyperTreeGridClipper.Origin = [
-    46.69016170501709,
-    -9.690824508666992,
-    -1120.631591796875,
-]
 
 # create a new 'Clip'
 clip3 = Clip(Input=clip2)
@@ -129,7 +110,7 @@ tTKTopologicalSimplification2 = TTKTopologicalSimplification(
     Domain=calculator2, Constraints=threshold4
 )
 tTKTopologicalSimplification2.ScalarField = ["POINTS", "Result"]
-tTKTopologicalSimplification2.Backend = "Numerical Optimization (2024)"
+tTKTopologicalSimplification2.Backend = "Topological Optimization (IEEE VIS 2024)"
 tTKTopologicalSimplification2.InputOffsetField = ["POINTS", "edgeCrossing"]
 tTKTopologicalSimplification2.VertexIdentifierField = ["POINTS", "CriticalType"]
 tTKTopologicalSimplification2.StoppingConditionCoefficient = 1e-05
@@ -142,7 +123,7 @@ tTKTopologicalSimplification1 = TTKTopologicalSimplification(
     Domain=calculator2, Constraints=threshold4
 )
 tTKTopologicalSimplification1.ScalarField = ["POINTS", "Result"]
-tTKTopologicalSimplification1.Backend = "Numerical Optimization (2024)"
+tTKTopologicalSimplification1.Backend = "Topological Optimization (IEEE VIS 2024)"
 tTKTopologicalSimplification1.InputOffsetField = ["POINTS", "edgeCrossing"]
 tTKTopologicalSimplification1.VertexIdentifierField = ["POINTS", "CriticalType"]
 tTKTopologicalSimplification1.StoppingConditionCoefficient = 1e-05
