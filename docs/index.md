@@ -39,6 +39,7 @@ If you have any questions regarding these examples, please let us know by sendin
 | [Morse-Smale quadrangulation](morseSmaleQuadrangulation/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/morseSmaleQuadrangulation.jpg) |
 | [Persistent Generators Molecule](persistentGenerators_at/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistentGenerators_at.jpg) |
 | [Persistent Generators Cosmic Web](persistentGenerators_darkSky/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistentGenerators_darkSky.jpg) |
+| [Topological Optimization Cosmic Web](topologicalOptimization_darkSky/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/topologicalOptimization_darkSky.png) |
 
 ## Bivariate scalar data
 
@@ -58,7 +59,9 @@ If you have any questions regarding these examples, please let us know by sendin
 |:-:|:-:|
 | [Time tracking](timeTracking/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/timeTracking.jpeg) |
 | [Merge tree temporal reduction](mergeTreeTemporalReduction/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/mergeTreeTemporalReduction.jpg) |
+<!--
 | [Nested tracking graph](nestedTrackingFromOverlap/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/nestedTrackingGraph.jpg) |
+-->
 
 ## Ensemble scalar data
 
