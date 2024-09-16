@@ -110,6 +110,7 @@ If you have any questions regarding these examples, please let us know by sendin
 | [Persistent Generators Casting](persistentGenerators_casting/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistentGenerators_casting.jpg) |
 | [Persistent Generators Fertility](persistentGenerators_fertility/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistentGenerators_fertility.jpg) |
 | [Persistent Generators Skull](persistentGenerators_skull/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistentGenerators_skull.jpg) |
+| [Topological Optimization for Torus Genus Repair](topologicalOptimization_torus/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/topologicalOptimizationTorus.jpg) |
 | [Topological Optimization for Pegasus Genus Repair](topologicalOptimization_pegasus/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/topologicalOptimizationPegasus.jpg) |
 | [Manifold checks](manifoldCheck/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/manifoldCheck.jpg) |
 | [Cinema IO](cinemaIO/) | <iframe  width="100%" height="420" src="https://www.youtube.com/embed/yKyiRzPbs0U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> |
