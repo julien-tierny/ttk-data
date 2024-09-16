@@ -20,7 +20,7 @@ To reproduce the above screenshot (and run the optimization online, around 40 mi
 paraview states/topologicalOptimization_darkSky.pvsm
 ```
 
-If you have already computed the optimization with [pvpython](#python-code), simply enter:
+If you have already computed the optimization with `pvpython`  (see [instructions below](#python-code)), simply enter:
 ``` bash
 paraview states/topologicalOptimization_darkSky_postProcess.pvsm
 ```
