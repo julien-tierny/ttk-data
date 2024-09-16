@@ -39,6 +39,7 @@ If you have any questions regarding these examples, please let us know by sendin
 | [Morse-Smale quadrangulation](morseSmaleQuadrangulation/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/morseSmaleQuadrangulation.jpg) |
 | [Persistent Generators Molecule](persistentGenerators_at/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistentGenerators_at.jpg) |
 | [Persistent Generators Cosmic Web](persistentGenerators_darkSky/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistentGenerators_darkSky.jpg) |
+| [Topological Optimization Cosmic Web](topologicalOptimization_darkSky/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/topologicalOptimization_darkSky.png) |
 
 ## Bivariate scalar data
 
@@ -58,7 +59,9 @@ If you have any questions regarding these examples, please let us know by sendin
 |:-:|:-:|
 | [Time tracking](timeTracking/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/timeTracking.jpeg) |
 | [Merge tree temporal reduction](mergeTreeTemporalReduction/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/mergeTreeTemporalReduction.jpg) |
+<!--
 | [Nested tracking graph](nestedTrackingFromOverlap/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/nestedTrackingGraph.jpg) |
+-->
 
 ## Ensemble scalar data
 
@@ -107,6 +110,7 @@ If you have any questions regarding these examples, please let us know by sendin
 | [Persistent Generators Casting](persistentGenerators_casting/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistentGenerators_casting.jpg) |
 | [Persistent Generators Fertility](persistentGenerators_fertility/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistentGenerators_fertility.jpg) |
 | [Persistent Generators Skull](persistentGenerators_skull/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/persistentGenerators_skull.jpg) |
+| [Topological Optimization for Pegasus Genus Repair](topologicalOptimization_pegasus/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/topologicalOptimizationPegasus.jpg) |
 | [Manifold checks](manifoldCheck/) | ![ExampleImage](https://topology-tool-kit.github.io/img/gallery/manifoldCheck.jpg) |
 | [Cinema IO](cinemaIO/) | <iframe  width="100%" height="420" src="https://www.youtube.com/embed/yKyiRzPbs0U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> |
 | [Compact Triangulation](compactTriangulation/) | <iframe  width="100%" height="420" src="https://www.youtube.com/embed/vDQRh_tuUSA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> |
