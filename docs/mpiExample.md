@@ -2,11 +2,11 @@
 
 ![MPI example Image](https://topology-tool-kit.github.io/img/gallery/mpiExample.jpg)
 
-This example demonstrates the use of TTK algorithms in parallel. The original data set is small and resampled to $256^3$ but this dimension can be changed to fit any machine resources. 
+This toy example illustrates the usage of TTK in a distributed-memory context with MPI. For this example, the original data set is small. Thus, the pipeline first resamples it to $256^3$ but this dimension can be changed to fit the capabilities of your distributed system.
 
-For more information on how to run a pipeline in parallel in ParaView, please refer to the following ParaView documentation for [compilation]((https://kitware.github.io/paraview-docs/latest/cxx/Offscreen.html)) and for [use](https://docs.paraview.org/en/latest/ReferenceManual/parallelDataVisualization.html) .
+For more information about how to run a pipeline in parallel in ParaView with MPI, please refer to the [ParaView documentation](https://docs.paraview.org/en/latest/ReferenceManual/parallelDataVisualization.html).
 
-Please note both ParaView and TTK need to be compiled with MPI to allow for parallel execution in a distributed context. 
+Please note both ParaView and TTK need to be compiled with MPI to allow for parallel execution in a distributed context (by setting the following CMake flags `-DPARAVIEW_USE_MPI=ON` and `-DTTK_ENABLE_MPI=ON` for ParaView and TTK respectively).
 
 ## Pipeline description
 
