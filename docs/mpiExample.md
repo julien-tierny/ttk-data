@@ -6,7 +6,7 @@ This toy example illustrates the usage of TTK in a distributed-memory context wi
 
 For more information about how to run a pipeline in parallel in ParaView with MPI, please refer to the [ParaView documentation](https://docs.paraview.org/en/latest/ReferenceManual/parallelDataVisualization.html).
 
-Please note both ParaView and TTK need to be compiled with MPI to allow for parallel execution in a distributed context (by setting the following CMake flags `-DPARAVIEW_USE_MPI=ON` and `-DTTK_ENABLE_MPI=ON` for ParaView and TTK respectively).
+Please note both ParaView and TTK need to be compiled with MPI to allow for parallel execution in a distributed context. For that we refer the reader to the ParaView and TTK installation instructions, but, in short, this can be done by setting the following CMake flags `PARAVIEW_USE_MPI=ON` and `TTK_ENABLE_MPI=ON` for ParaView and TTK respectively. Also, for processing large-scale datasets (typically beyond $1024^3$), we recommend to build TTK with 64 bit identifiers (by setting the CMake flag `TTK_ENABLE_64BIT_IDS=ON`).
 
 ## Pipeline description
 
@@ -50,7 +50,7 @@ OMP_NUM_THREADS=2 mpirun -n 4 pvbatch python/mpiExample.py
 By default, the dataset is resampled to $256^3$. To resample to a higher dimension, for example $2048^3$, enter the following command:
 
 ```bash
-OMP_NUM_THREADS=2 mpirun -n 4 pvbatch pipeline.py 2048
+OMP_NUM_THREADS=2 mpirun -n 4 pvbatch python/mpiExample.py 2048
 ```
 Be aware that this will require a lot of memory to execute and will most likely not be possible on a regular laptop.
 
