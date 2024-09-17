@@ -10,9 +10,10 @@ Please note both ParaView and TTK need to be compiled with MPI to allow for para
 
 ## Pipeline description
 
-The produced visualization captures the covalent and hydrogen bonds within the molecule complex as well as shows where the electronic density experiences rapid changes, indicating transition points occurring within the bond.
+The produced visualization captures the covalent and hydrogen bonds within the Adenine-Thymine molecular complex.  It also shows where the electronic density experiences rapid changes, indicating transition points occurring within the bond.
 
-First, the magnitude of the scalar field is computed and the data set is resampled to $256^3$. This dimension can be changed (see the commands below).
+First, the magnitude of the scalar field is computed and the data set is resampled to $256^3$. This dimension can be changed
+(see the corresponding [Python script below](#python-code)).
 
 Then, both the scalar field and its magnitude are smoothed via [ScalarFieldSmoother](https://topology-tool-kit.github.io/doc/html/classttkScalarFieldSmoother.html) and normalized via [ScalarFieldNormalizer](https://topology-tool-kit.github.io/doc/html/classttkScalarFieldNormalizer.html).
 
@@ -32,7 +33,7 @@ In another command line enter the following command:
 ``` bash
 paraview 
 ```
-Now, follow the procedure described in paragraph $7.2.2$ of the following [ParaView documentation](https://docs.paraview.org/en/latest/ReferenceManual/parallelDataVisualization.html#configuring-a-server-connection) to connect your ParaView server to your client. Once that is done, you can open the state file `state/mpiExample.pvsm` in the ParaView GUI through `File` > `Load State`. 
+Now, follow the procedure described in paragraph $7.2.2$ of the following [ParaView documentation](https://docs.paraview.org/en/latest/ReferenceManual/parallelDataVisualization.html#configuring-a-server-connection) to connect your ParaView server to your client. Once that is done, you can open the state file `states/mpiExample.pvsm` in the ParaView GUI through `File` > `Load State`.
 
 
 ## Python code
