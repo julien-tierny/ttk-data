@@ -57,21 +57,29 @@ Be aware that this will require a lot of memory to execute and will most likely 
 
 
 ## Inputs
-- [at.vti](https://github.com/topology-tool-kit/ttk-data/raw/dev/at.vti): A molecular dataset: a three-dimensional regular grid with one scalar field, the electronic density in the Adenine Thymine complex.
+- [at.vti](https://github.com/topology-tool-kit/ttk-data/raw/dev/at.vti): A molecular dataset: a three-dimensional regular grid with one scalar field, the electronic density for the Adenine Thymine complex.
 
 ## Outputs
 - `integralLines.pvtu`: the geometry of the smoothed integral lines capturing the covalent and hydrogen bonds of the molecule, as extracted by the analysis pipeline.
-- `criticalPoints.pvtu`: the critical points computed on the geometry of the integral lines, showing the rapid changes in the bonds.
+- `criticalPoints.pvtp`: the critical points computed on the geometry of the integral lines, showing the rapid changes in the bonds.
 
 ## C++/Python API
 
-[ScalarFieldSmoother](https://topology-tool-kit.github.io/doc/html/classttkScalarFieldSmoother.html)
+[ArrayPreconditioning](https://topology-tool-kit.github.io/doc/html/classttkArrayPreconditioning.html)
 
-[ScalarFieldNormalizer](https://topology-tool-kit.github.io/doc/html/classttkScalarFieldNormalizer.html)
-
-[ScalarFieldCriticalPoints](https://topology-tool-kit.github.io/doc/html/classttkScalarFieldCriticalPoints.html)
+[GeometrySmoother](https://topology-tool-kit.github.io/doc/html/classttkGeometrySmoother.html)
 
 [IntegralLines](https://topology-tool-kit.github.io/doc/html/classttkIntegralLines.html)
 
-[GeometrySmoother](https://topology-tool-kit.github.io/doc/html/classttkGeometrySmoother.html)
+[PointDataSelector](https://topology-tool-kit.github.io/doc/html/classttkPointDataSelector.html)
+
+[ScalarFieldCriticalPoints](https://topology-tool-kit.github.io/doc/html/classttkScalarFieldCriticalPoints.html)
+
+[ScalarFieldNormalizer](https://topology-tool-kit.github.io/doc/html/classttkScalarFieldNormalizer.html)
+
+[ScalarFieldSmoother](https://topology-tool-kit.github.io/doc/html/classttkScalarFieldSmoother.html)
+
+
+
+
 
