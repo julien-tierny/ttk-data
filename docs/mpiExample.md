@@ -1,6 +1,6 @@
 # MPI Example
 
-![MPI example Image](https://topology-tool-kit.github.io/img/gallery/mpiExample.png)
+![MPI example Image](https://topology-tool-kit.github.io/img/gallery/mpiExample.jpg)
 
 This example demonstrates the use of TTK algorithms in parallel. The original data set is small and resampled to $256^3$ but this dimension can be changed to fit any machine resources. 
 
