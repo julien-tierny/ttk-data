@@ -201,6 +201,14 @@ Data specs
 }
 
 {
+  "name": "mixingVonKarman.vti",
+  "description": "Orthogonal component of the curl of a time-varying 2D vector
+  field modeling a mixing von Karman vortex street",
+  "acknowledgement": "Thomas Daniel (adapted from Basilisk's examples)",
+  "url": "http://basilisk.fr/src/examples/karman.c"
+}
+
+{
   "name": "naturalImage.png",
   "description": "Photograph of a building",
   "acknowledgement": "IPOL LSD demo",
